@@ -1,0 +1,82 @@
+/* Closed state */
+@media (max-width: 768px) {
+    .nav__wrapper.closed {
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+        transform: translateY(-20px);
+        transition: all 0.5s ease-in-out;
+      }
+      
+      /* Open state */
+      .nav__wrapper.open {
+        opacity: 1;
+        height: auto;
+        transform: translateY(0);
+        transition: all 0.5s ease-in-out;
+      }
+      
+      /* General styles for the nav__wrapper */
+      .nav__wrapper {
+        display: flex;
+        align-items: flex-start;
+        width: calc(100% - 30px);
+        margin: auto;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        position: absolute;
+        top: 84px;
+        left: 0;
+        right: 0;
+        background: var(--background);
+      }
+      
+      /* Styling for navigation links */
+      .nav-links li {
+        margin: 0 !important;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .nav-links a {
+        color: var(--on-background);
+        padding: 15px;
+        transition: background-color 0.3s ease;
+      }
+      
+      .nav-links a:hover {
+        background-color: #f0f0f0;
+        border-radius: 5px;
+      }
+      
+      /* Media query for responsive adjustments */
+    
+        .nav__wrapper {
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          margin-top: 10px;
+          margin-left: 10px;
+          margin-right: 10px;
+          text-align: center;
+          width: auto;
+        }
+      
+        .nav-links {
+          flex-direction: column;
+          margin: 20px 20px 10px 20px;
+        }
+        .nav__wrapper .button {
+            margin: 0 0 20px 40px;
+        }
+    
+        .menu__btn {
+            position: absolute;
+            right: 33px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+      }
+      

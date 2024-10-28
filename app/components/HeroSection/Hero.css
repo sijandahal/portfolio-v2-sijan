@@ -1,0 +1,74 @@
+
+
+.hero-content h3 {
+    font-weight: 600;
+    color: var(--on-background);
+}
+
+  .hero-list {
+    margin-bottom: 20px;
+  }
+  
+  .hero-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  
+  .hero-list li {
+    font-size: 1.2rem; /* Adjust as needed */
+    margin: 5px 0;
+  }
+  
+.image__wrapper {
+  aspect-ratio: 1 / 1;
+    border-radius: 200px;
+    box-shadow: 0 66px 26px #5a6c7c03, 0 37px 22px #5a6c7c0d, 0 16px 16px #5a6c7c17, 0 4px 9px #5a6c7c1a;
+    height: 140px;
+    width: 140px;
+}
+
+@keyframes ping {
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.ping {
+  position: relative;
+  padding-left: 1.8em;
+}
+
+.ping::before,
+.ping::after {
+  content: '';
+  position: absolute;
+  top: 0.25em;
+  left: 0;
+  width: 0.75em;
+  height: 0.75em;
+  border-radius: 50%;
+  background: var(--primary-gradient) !important;
+}
+
+.ping::before {
+    animation: ping 1.7s ease infinite;
+  opacity: 0.25;
+}
+
+[data-theme="light"] {
+  .button {
+    background: var(--card-background-dark);
+    color: #fff;
+  }
+}
+
+ [data-theme = "dark"] .hero__btn .button {
+  
+}
+

@@ -1,0 +1,9 @@
+.featured__wrapper, .project-inner{
+    transition: background-color 1000ms linear;
+    background-color: var(--card-background-dark);
+}
+
+.techStacks {
+    background-color: var(--body-background-dark)
+}
+

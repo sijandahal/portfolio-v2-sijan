@@ -1,0 +1,21 @@
+.slider__title {
+    font-size: clamp(40px, 9vw, 120px);
+    opacity: 0.8;
+    color: var(--card-background-dark);
+}
+
+.phrase {
+    font-size: clamp(20px, 7vw, 80px);
+    font-weight: bold;
+    background: linear-gradient(166.9deg,#0ae448 53.19%,#0085d0 107.69%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+}
+
+[data-theme="dark"] {
+    .slider__title {
+            color: #ccd6f6;
+    }
+  }
