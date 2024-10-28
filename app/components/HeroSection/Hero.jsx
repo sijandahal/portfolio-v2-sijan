@@ -78,7 +78,7 @@ const Hero = () => {
           <div className="image__wrapper mb-10 ">
             <Image src="/profile.jpg" width={140} height={140} className=" rounded-full h-full w-full object-cover object-center" />
           </div>
-          <h1 className=" text-display-large mb-8">Hi, I'm Sijan — Software Engineer</h1>
+          <h1 className=" text-display-large mb-8">Hi, I&apos;m Sijan — Software Engineer</h1>
           <h3 className="text-display-small mb-3 max-w-[30em]">
           I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products.
           </h3>
