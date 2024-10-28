@@ -8,7 +8,7 @@ const Footer = () => {
     <footer>
       <div className="max-w-4xl mx-auto py-10">
         <div className="text-center">
-          <h3 className="text-display-large my-8">Let's Get Connected</h3>
+          <h3 className="text-display-large my-8">Let&apos;s Get Connected</h3>
         </div>
       
           
